@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторные работы</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Лабораторные роботы</h1>
+    <h2>Лабораторная работа №1</h2>
+    <h3>Основы построения HTML-документов и подготовка изображений для Web</h3>
+    <h3>Вариант №1</h3>
+    <div style="width: 20%;" id="text">
+        <p>Для любого натуального числа <b>n>2</b> уравнение a<sup>n</sup>+b<sup>n</sup>=c<sup>n</sup><b> не имеет
+                решений</b>
+            при целых ненулевых числах а, b, c.</p>
+    </div>
+    <ol start="1" id="list">
+        <li>КІУ
+            <ol>
+                <li>КІТ</li>
+                <li>ЕОМ</li>
+                <li>АПОТ</li>
+                <li>БІТ</li>
+                <li>Філософії</li>
+                <li>Укр</li>
+            </ol>
+        </li>
+        <li>КН
+            <ol>
+                <li>ІУС</li>
+                <li>ШІ</li>
+                <li>СТ</li>
+                <li>ПІ</li>
+                <li>МСТ</li>
+            </ol>
+        </li>
+        <li>АКТ
+            <ol>
+                <li>КІТАМ</li>
+                <li>ПЕЕА</li>
+                <li>Фізики</li>
+                <li>ОП</li>
+            </ol>
+        </li>
+        <li>ІТМ
+            <ol>
+                <li>ІНФ</li>
+                <li>ПМ</li>
+                <li>ВМ</li>
+                <li>ЕК</li>
+                <li>ПрН</li>
+            </ol>
+        </li>
+        <li>ІК
+            <ol>
+                <li>ІКІ</li>
+                <li>ІМІ</li>
+                <li>ІВТ</li>
+                <li>МП</li>
+            </ol>
+        </li>
+        <li>ЕЛБІ
+            <ol>
+                <li>БМІ</li>
+                <li>МЕЕПП</li>
+                <li>ФОЕТ</li>
+                <li>ФВС</li>
+            </ol>
+        </li>
+        <li>ІРТЗІ
+            <ol>
+                <li>МТС</li>
+                <li>КРіСТЗІ</li>
+                <li>РТІКС</li>
+                <li>МІРЕС</li>
+                <li>Іноземних мов</li>
+            </ol>
+        </li>
+    </ol>
+    <table id="table">
+        <thead>Таблица с данными курса валют</thead>
+        <tbody>
+            <th>Валюта</th>
+            <th>Покупка</th>
+            <th>Продажа</th>
+            <tr>
+                <td>USD</td>
+                <td>27,38</td>
+                <td>27,63</td>
+            </tr>
+            <tr>
+                <td>EUR</td>
+                <td>30,8</td>
+                <td>31,22</td>
+            </tr>
+            <tr>
+                <td>RUB</td>
+                <td>0,32</td>
+                <td>0,37</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="#" name="vote" id="form">
+        <p>За кого отдадите голос?</p>
+        <p><input type="radio" name="answer" value="Ivanov">Иванов И.И.<Br>
+            <input type="radio" name="answer" value="Petrov">Петров П.П.<Br>
+            <input type="radio" name="answer" value="Vasiliev">Васильев В.В</p>
+        <p><input type="submit"></p>
+    </form>
+    <span>Ссылки и изображения</span>
+    <ol>
+        <li><a href="#text" alt="text">Оформленный текст</a></li>
+        <li><a href="#list" alt="list">Список</a></li>
+        <li><a href="#table" alt="table">Таблица</a></li>
+        <li><a href="#form" alt="form">Форма с управляющими элементами</a></li>
+    </ol>
+    <h2>Лабораторная работа №2</h2>
+    <h3>Каскадные таблицы стилей</h3>
+    <h3>Вариант №7</h3>
+    <div class="tab">
+        <button class="tab__links" onclick="makeContent(event, 'tabOne')">Вкладка №1</button>
+        <button class="tab__links" onclick="makeContent(event, 'tabTwo')">Вкладка №2</button>
+        <button class="tab__links" onclick="makeContent(event, 'tabThree')">Вкладка №3</button>
+    </div>
+    <div id="tabOne" class="content">
+        <h3>Sample content №1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quia, quaerat similique. Vero facilis deleniti libero quis odio distinctio fugit.
+        Ex quis harum dolor a minima error provident temporibus amet beatae!</p>
+    </div>
+    <div id="tabTwo" class="content">
+        <h3>Sample content №2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quia, quaerat similique. Vero facilis deleniti libero quis odio distinctio fugit.
+            Ex quis harum dolor a minima error provident temporibus amet beatae!</p>
+    </div>
+    <div id="tabThree" class="content">
+        <h3>Sample content №3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quia, quaerat similique. Vero facilis deleniti libero quis odio distinctio fugit.
+            Ex quis harum dolor a minima error provident temporibus amet beatae!</p>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+
+</html>
